@@ -1,6 +1,6 @@
 # OpenCoF: Learning to Reason Through Video Generation
 
-Official repository for the paper **"OpenCoF: Learning to Reason Through Video Generation"**.
+Official repository for the paper **"[OpenCoF: Learning to Reason Through Video Generation](https://arxiv.org/abs/2607.08763)"**.
 
 [[🌐 Project Page](https://opencof.github.io/)] [[📖 Paper](https://arxiv.org/abs/2607.08763)]
 
