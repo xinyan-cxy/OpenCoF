@@ -6,6 +6,7 @@ Official repository for the paper **"[OpenCoF: Learning to Reason Through Video 
 
 ## 💥 News
 
+- **[2026.10]** The [Wan-CoF model](https://huggingface.co/xy06/Wan-CoF) is now publicly available on Hugging Face.
 - **[2026.09]** The [OpenCoF-17K dataset](https://huggingface.co/datasets/xy06/OpenCoF-17k) is now publicly available on Hugging Face.
 - **[2026.07]** Code, dataset, and model release is pending internal company review.
 
@@ -29,11 +30,11 @@ Our results suggest that stronger video reasoning requires both broad temporal s
 
 ## 🚧 Code, Model & Dataset
 
-The code and model checkpoints are currently going through internal company review before public release.
+The code is currently going through internal company review before public release.
 
 - [ ] Code &mdash; Coming soon
 - [x] [OpenCoF-17K dataset](https://huggingface.co/datasets/xy06/OpenCoF-17k)
-- [ ] Wan-CoF model checkpoints &mdash; Coming soon
+- [x] [Wan-CoF model checkpoints](https://huggingface.co/xy06/Wan-CoF)
 
 ## 📖 Citation
 
