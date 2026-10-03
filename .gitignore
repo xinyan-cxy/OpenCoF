@@ -1,15 +1,37 @@
+# Byte-compiled / optimized / cache
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
 .eggs/
 build/
 dist/
 
+# Experiment logs & outputs
+wandb/
+**/wandb/
+runs/
+outputs/
+output/
+*.log
+temp_accelerate_config.yaml
+
+# Local data / checkpoints (do not commit)
+/data/
+/datasets/
+checkpoints/
+ckpt/
+*.safetensors
+*.pth
+*.ckpt
+
+# Environment
 .venv/
 venv/
-env/
+.env
+*.env
 
+# Editor / OS
+.idea/
+.vscode/
 .DS_Store
-*.log
-
-.ipynb_checkpoints/

@@ -1,0 +1,32 @@
+OpenCoF
+Copyright (c) 2026 ByteDance Ltd. and/or its affiliates
+
+This product is a derivative work built on top of DiffSynth-Studio and is
+distributed under the Apache License, Version 2.0 (see the LICENSE file).
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+
+DiffSynth-Studio
+  Copyright (c) 2023 Zhongjie Duan / ModelScope Community
+  Licensed under the Apache License, Version 2.0.
+  Source: https://github.com/modelscope/DiffSynth-Studio
+  The `diffsynth/` package and the `examples/` directory are derived from
+  DiffSynth-Studio. Files modified by ByteDance for this project carry an
+  additional copyright notice and a modification note in their header.
+
+Wan2.2-I2V-A14B
+  The training and evaluation pipelines in this project build on the publicly
+  released Wan2.2-I2V-A14B model. Use of that model is subject to its own
+  license and terms. This repository does not redistribute the model weights.
+
+Evaluation benchmarks (files under eval/ are adapted from these projects and
+retain their upstream copyright / license; see per-file headers):
+
+  MME-CoF        Copyright (c) 2025 Ziyu Guo            MIT License
+                 https://video-cof.github.io/
+  RULER-Bench    Copyright (c) 2025 Xuming He           MIT License
+                 https://github.com/hexmSeeU/RULER-Bench
+  VIPER          Copyright (c) 2026 Yifan Li            MIT License
+                 https://arxiv.org/abs/2512.24952

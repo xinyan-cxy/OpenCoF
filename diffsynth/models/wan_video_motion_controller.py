@@ -1,0 +1,32 @@
+# Copyright (c) 2023 Zhongjie Duan and the ModelScope Community
+# SPDX-License-Identifier: Apache-2.0
+#
+# This file is part of DiffSynth-Studio, released under the Apache License 2.0:
+# https://github.com/modelscope/DiffSynth-Studio
+import torch
+import torch.nn as nn
+from .wan_video_dit import sinusoidal_embedding_1d
+
+
+
+class WanMotionControllerModel(torch.nn.Module):
+    def __init__(self, freq_dim=256, dim=1536):
+        super().__init__()
+        self.freq_dim = freq_dim
+        self.linear = nn.Sequential(
+            nn.Linear(freq_dim, dim),
+            nn.SiLU(),
+            nn.Linear(dim, dim),
+            nn.SiLU(),
+            nn.Linear(dim, dim * 6),
+        )
+
+    def forward(self, motion_bucket_id):
+        emb = sinusoidal_embedding_1d(self.freq_dim, motion_bucket_id * 10)
+        emb = self.linear(emb)
+        return emb
+
+    def init(self):
+        state_dict = self.linear[-1].state_dict()
+        state_dict = {i: state_dict[i] * 0 for i in state_dict}
+        self.linear[-1].load_state_dict(state_dict)
