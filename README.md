@@ -1,4 +1,4 @@
-# **🌟🔥 [NeurIPS 2026] OpenCoF:** Learning to Reason Through Video Generation
+# **🔥 [NeurIPS 2026] OpenCoF:** Learning to Reason Through Video Generation
 
 Official repository for the paper **"[OpenCoF: Learning to Reason Through Video Generation](https://arxiv.org/abs/2607.08763)"**.
 
